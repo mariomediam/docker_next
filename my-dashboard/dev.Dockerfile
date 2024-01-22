@@ -13,11 +13,13 @@ RUN \
   fi
 
 COPY public ./public
-COPY app ./app
+COPY src ./src
+
 
 COPY .eslintrc.json .
 COPY next-env.d.ts .
 COPY next.config.js .
+COPY next.config.mjs .
 COPY package-lock.json .
 COPY package.json .
 COPY postcss.config.js .
